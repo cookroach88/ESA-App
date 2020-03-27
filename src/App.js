@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Suchen & kopieren
+        Peters eigener Branch
       </header>
 
         <div style={{paddingTop:10, paddingLeft:10}}>
@@ -13,7 +13,6 @@ function App() {
         </div>
         <button>Zielordner</button>
         <button>search & copy</button>
-      App
     </div>
   );
 }
