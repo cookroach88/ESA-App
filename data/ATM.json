@@ -1,0 +1,20 @@
+{
+   "infos": [
+      {
+         "name": "Flächenstrahler",
+         "value": "FLxx.IR"
+      },
+      {
+         "name": "Strahler-Halterung",
+         "value": "HTxx.IR"
+      },
+	  {
+         "name": "Leistungsregler",
+         "value": "KLxx.IR"
+      },
+	  {
+         "name": "Spotstrahler",
+         "value": "SPT.IR"
+      }
+   ]
+}

@@ -1,0 +1,71 @@
+/* this stylesheet was created for using into ESA-IR-Webspace only
+ * created by [NW] 2020-01-31, change by [FJF] on 2020-02-10
+ * last change: 2020-02-24
+ * - use the colors and fonts space for all and delete other
+ *   fonts tags, if is necessary into sites by formating the content
+ */
+/* --------------------------------------------------------- */
+/*  Overview: (see on esastyle.css-file)
+*/
+/* --------------------------------------------------------- */
+/* b) ESA color-library, marked with (*) in using into styles
+                ESA: blue-colors:
+                light           #b2e2ff
+                halflight       #a0cbe5(*)
+                ESA-blue        #0074bc(*)
+                halfdark        #005384(*)
+                dark            #003e63
+                strondark       #002b44
+                --------------------------------
+                ESA: grey-colors:
+                light           #e5e5e5(*)
+                halflight       #cccccc
+                normal          #828282(*)
+                halfdark        #595959
+                dark            #424242
+                strongdark      #2d2d2d
+                --------------------------------
+                ESA: red-colors
+                light           #ffbdb5(*)
+                normal          #ff290c
+                dark            #be1e05(*)
+                strongdark      #630f02(*)
+                verystrong      #440a02
+                --------------------------------
+                ESA: yellow-colors
+                light           #ffefc9
+                halflight       #ffd04f(*)
+                normal          #ffbe00(*)
+                halfdark        #b58400(*)
+                dark            #846100
+                --------------------------------
+                ESA: green-colors
+                light           #b2ffc9
+                halflight       #00d844
+                normal          #009930
+                halfdark        #007023
+                dark            #004f19
+                --------------------------------
+                ESA: text light
+                White           #ffffff
+                --------------------------------
+*/
+/* --------------------------------------------------------- */
+
+/* --------------------------------------------------------- */
+/* extract some parts of esastyle.css */
+body { font-family:Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:8pt; color:0074bc}
+button {border-radius: 2px; background-color: 0074bc}
+td ,th { font-family:Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:8pt; color:#0074bc;}
+.center {text-align: center; padding: 5px 0;}
+tr:hover {background-color: #f1f1f1;}
+
+/* ------------------------------------------ */
+/*
+         all this code is under CC-BY-4.0-Lizenz
+         author:        n.weber@esa-grimma.de
+         start on:      2020-01-31
+		 last release:	2020-04-27
+         enjoy and have fun forever
+*/
+/* ------------------------------------------ */

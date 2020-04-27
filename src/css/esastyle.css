@@ -1,0 +1,213 @@
+/* this stylesheet was created for using into ESA-IR-Webspace only
+ * created by [NW] 2020-01-31, change by [FJF] on 2020-02-10
+ * last change: 2020-02-24
+ * - use the colors and fonts space for all and delete other
+ *   fonts tags, if is necessary into sites by formating the content
+ */
+/* --------------------------------------------------------- */
+/*  Overview: (this style are build in seperatly parts)
+ *  defined attributs:
+ *  ------------------
+ *  font-family:       Verdana,Arial,Helvetica,Helv,Swiss; (comparable to 'Segoe UI')
+ *  size:              7pt (small), 8pt (normal), 10pt (middle), 12pt (big)
+ *
+ *  defined tags:
+ *  -------------
+ *  [body],[div], [ul], [li], [table], [th], [td]
+ *  [b], [p], [strong], [i], [a], [form], [input]
+ *
+ *  used graphis:
+ *  -------------
+ *  kat.gif                                used as arrow by [li]
+ *  .......                                used by ...
+*/
+/* --------------------------------------------------------- */
+/* b) ESA color-library, marked with (*) in using into styles
+                ESA: blue-colors:
+                light           #b2e2ff
+                halflight       #a0cbe5(*)
+                ESA-blue        #0074bc(*)
+                halfdark        #005384(*)
+                dark            #003e63
+                strondark       #002b44
+                --------------------------------
+                ESA: grey-colors:
+                light           #e5e5e5(*)
+                halflight       #cccccc
+                normal          #828282(*)
+                halfdark        #595959
+                dark            #424242
+                strongdark      #2d2d2d
+                --------------------------------
+                ESA: red-colors
+                light           #ffbdb5(*)
+                normal          #ff290c
+                dark            #be1e05(*)
+                strongdark      #630f02(*)
+                verystrong      #440a02
+                --------------------------------
+                ESA: yellow-colors
+                light           #ffefc9
+                halflight       #ffd04f(*)
+                normal          #ffbe00(*)
+                halfdark        #b58400(*)
+                dark            #846100
+                --------------------------------
+                ESA: green-colors
+                light           #b2ffc9
+                halflight       #00d844
+                normal          #009930
+                halfdark        #007023
+                dark            #004f19
+                --------------------------------
+                ESA: text light
+                White           #ffffff
+                --------------------------------
+*/
+/* --------------------------------------------------------- */
+/*c) used combination between colors and fonts
+                ---------------------------------------
+        // c00x) for text with <b>,<p>,<i>, <strong>
+         text                                         |        backgrounds
+         c001) #0074bc        ESA blue                |        #ffffff                white
+         c002) #a0cbe5        halflight               |        #ffffff                white
+         c003) #005384        halfdark                |        #ffffff                white
+                ---------------------------------------
+        // c01x) for links with <a>
+         text                                     |        background s
+         c011) #ffffff        white                        |        #005384         halfdark blue
+         c012) #ffbe00        ESA yellow                |        #005384                halfdark blue
+                ---------------------------------------
+        // c02x) for select
+                   text                                                |        backgrounds
+         c021) #ffffff        white                        |        #005384         halfdark blue
+         c022) #0074bc        ESA blue                |        #ffffff                white
+                ---------------------------------------
+        // c03x) for scrollbars into pages
+                 c031) #e5e5e5        light grey
+         c032) #828282        normal grey
+                ---------------------------------------
+        // c04x) for cells into table
+                 c041)  ... ...
+         c042)  ... ...
+                ---------------------------------------
+        // c05x) scrollbar and similar elements
+         c051)  ... ....
+         c051)  ... ....
+                 ---------------------------------------
+        // c06x) for forms and elements of this
+         c061) ... ....
+         c062) ... ....
+                ---------------------------------------
+        // c07x) reserved for other elements
+         c071)  ... ....
+         c071)  ... ....
+            ---------------------------------------
+        // c10x) common elements
+         c101)  borders ...
+         c102)  areas ... and others
+ */
+
+/* --------------------------------------------------------- */
+/* ... */
+/* d)  used elements */
+/* (the used combinations of part c) are marked with the relevant number) */
+/* d1) commons: */
+body, div { font-family:Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:8pt; color:0074bc; background-color: #ffffff}
+/* body-scrollbar options: face-color -> c9); */
+body { SCROLLBAR-FACE-COLOR: #828282; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #ffffff; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; }
+/* Font = Verdana ...; Size = 8pt; Color = #000000(black))  */
+ul,li { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE: 8pt; color:#0074bc; list-style-image: url('../img/kat.gif') }
+
+/* d2) special colors */
+/*input,select,textarea font = Verdana...; Size:8pt; Color ->c6)  */
+select.white { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:8pt; color:#ffffff; background:#005384;}
+                /*input,select,textarea font = Verdana...; Size:8pt; Color ->c7)  */
+      .blue { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:8pt; color:#0074bc; background:#ffffff;}
+
+
+/* d3) tables and elements of this */
+/* table background-color: #ffffff wird nicht benutzt, sonst "graphics/body.gif" wird nicht mehr gezeigt */
+table { border:1; cellpadding:0; cellspacing:0; bordercolor:#0074bc;}
+/*color ->c7*/
+td , th { font-family:Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:8pt; color:#0074bc;}
+td.white { font-family:Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:8pt;  background-color:#0074bc; color:#ffffff}
+
+/* d4) kind of text */
+/* using bolds */
+b { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:8pt; color:#0074bc; font-weight: bold;} /* color setting in start.php */
+b.small { font-family: Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:7pt; color: #0074bc; font-weight: bold;}
+b.middle { font-family: Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:10pt; color: #0074bc ; font-weight: bold;}
+b.big { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:12pt; color:#0074bc; font-weight: bold; }
+b.menu{ font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:8pt; color:#ffffff; font-weight: bold;} /*for "Start" menu*/
+b.gelb{ font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:8pt; color:#ffbe00; font-weight: bold;} /*for die visited link on menu*/
+
+/* is valid only for p-tag */
+/* using p-tag:color = #0074bc ESA blue, background-color = weiss*/
+p { font-family: Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:8pt; color: #0074bc; }
+p.small { font-family: Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:7pt; color: #0074bc;}
+p.middle { font-family: Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:10pt; color: #0074bc;}
+p.big { font-family:Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:12pt; color: #0074bc;}
+
+/* is valid only for i-tag */
+/* using i-Tag: color = #0074bc ESA blue, background-color = weiss*/
+i { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:8pt; color:#0074bc;} /* color setting in start.php */
+i.small { font-family: Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:7pt; color: #0074bc;}
+i.middle { font-family: Verdana,Arial,Helvetica,Helv,Swiss; FONT-SIZE:10pt; color: #0074bc;}
+i.big { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:12pt; color:#0074bc;}
+
+/* strong-tags using for red colors */
+/* using strongs: light red = #ffbdb5; dark red = #be1e05*/
+strong.lred { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:9pt; color:#ff290c; font-weight: bold;}
+strong.red { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:9pt; color:#be1e05; font-weight: bold;}
+strong.dkred { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:9pt; color:#630f02; font-weight: bold;}
+strong.cred { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:9pt; color:#630f02; font-weight: bold;}
+
+/* d5) all kins of links */
+/* is valid for all normal link-tags */
+A:link    {text-decoration: underline; color: #000000;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*black = #000000*/
+A:visited {text-decoration: underline; color: #000000;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*black = #000000*/
+A:active  {text-decoration: underline; color: #000000;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*black = #000000*/
+A:hover   {text-decoration: none; color: #0074bc;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*ESA blue = #0074bc*/
+/* is valid for all menue link-tags */
+A.menu:link    {text-decoration: none; color: #FFFFFF;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*white = #ffffff*/
+A.menu:visited {text-decoration: none; color: #FFFFFF;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*white = #ffffff*/
+A.menu:active  {text-decoration: none; color: #ff0000;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*normal yellow = #FFbe00*/
+A.menu:hover   {text-decoration: none; color: #FFbe00;FONT-SIZE:8pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;}
+/* is valid for all blue link-tags */
+A.blue:link     {text-decoration: none; color: #005384;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*ESA blue = #0074bc*/
+A.blue:visited  {text-decoration: none; color: #0074bc;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*ESA blue = #0074bc*/
+A.blue:active   {text-decoration: none; color: #005384;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*halfdark = #005384*/
+A.blue:hover    {text-decoration: none; color: #b2e2ff;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;}/*light blue = #b2e2ff*/
+/* is valid for all red link-tags */
+A.red:link    {text-decoration: none; color: #be1e05;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*dark red = #be1e05*/
+A.red:visited {text-decoration: none; color: #be1e05;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*dark red = #be1e05*/
+A.red:active  {text-decoration: none; color: #630f02;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;font-weight: bold;}/*strongdark red = #630f02*/
+A.red:hover   {text-decoration: none; color: #ffbdb5;FONT-SIZE:9pt;font-family: Verdana,Arial,Helvetica,Helv,Swiss;}/*light red = #ffbdb5*/
+
+/* d6) specials */
+/* main form styles*/
+form { font-family:Verdana,Arial,Helvetica,Helv,Swiss;FONT-SIZE:8pt; color:#0074bc; font-weight: bold;}
+
+h1 { text-shadow: 2px 2px #005384; }
+h2 { text-shadow: 1px 1px #b2e2ff; }
+
+.opac { opacity: 0.8; }
+
+.vert { -moz-orient: vertical; width: 16px; height: 250px; }
+.hori { width: 100%; height: 16px; }
+
+/* ------------------------------------------ */
+/*
+         all this code is under CC-BY-4.0-Lizenz
+         author:        n.weber@esa-grimma.de
+         start on:      2020-01-31
+         enjoy and have fun forever
+*/
+/* ------------------------------------------ */
+
+/* ------------------------------------------
+ * after work delete all comments here and
+ * write this informations into a special
+ * documentation file => xxxxx.pdf
+ * ------------------------------------------ */
